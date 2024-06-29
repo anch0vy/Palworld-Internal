@@ -20,7 +20,7 @@ void AnyWhereTP(SDK::FVector& vector, bool IsSafe);
 
 void ExploitFly(bool IsFly);
 
-void SetFullbright(bool bIsSet);
+// void SetFullbright(bool bIsSet);
 
 void PlayerSpeedHack(float mSpeed);
 

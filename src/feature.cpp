@@ -103,7 +103,7 @@ void UnlockAllEffigies()
 	if (!world)
 		return;
 
-	TUObjectArray* objects = world->GObjects;
+	TUObjectArray* objects = world->GObjects.GetTypedPtr();
 
 	for (int i = 0; i < objects->NumElements; ++i) 
 	{
@@ -237,6 +237,7 @@ void ExploitFly(bool IsFly)
 }
 
 //	credit: xCENTx
+/*
 void SetFullbright(bool bIsSet)
 {
 	ULocalPlayer* pLocalPlayer = Config.GetLocalPlayer();
@@ -249,6 +250,7 @@ void SetFullbright(bool bIsSet)
 
 	pViewport->mViewMode = bIsSet ? 1 : 3;
 }
+*/
 
 //
 void WorldSpeedHack(float mSpeed)
@@ -342,7 +344,7 @@ void SetPlayerNickname(std::string newName)
 		return;
 
 	FPalInstanceID charID = pCharHandle->ID;
-	pNetworkIV->UpdateCharacterNickName_ToServer(charID, FString(std::wstring(newName.begin(), newName.end()).c_str()));
+	pPalPlayerController->UpdateCharacterNickName_ToServer(charID, FString(std::wstring(newName.begin(), newName.end()).c_str()));
 }
 
 void SetPlayerHealth(__int32 newHealth)

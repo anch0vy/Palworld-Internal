@@ -327,8 +327,8 @@ namespace DX11_Base
                 ImGuiWindow* gWindow = ImGui::GetCurrentWindow();
                 float cursorX = 0.f;
 
-                if (ImGui::Checkbox("FULL BRIGHT", &Config.IsFullbright))
-                    SetFullbright(Config.IsFullbright);
+                // if (ImGui::Checkbox("FULL BRIGHT", &Config.IsFullbright))
+                //     SetFullbright(Config.IsFullbright);
                 gWindow->DC.CursorPos.y += 5.f;
 
                 if (ImGui::Checkbox("FLOAT MODE", &Config.IsToggledFly))
@@ -552,7 +552,7 @@ namespace DX11_Base
                                                 auto player = (SDK::APalPlayerCharacter*)pChar;
                                                 SDK::FString fakename;
                                                 player->CharacterParameterComponent->GetNickname(&fakename);
-                                                Config.GetPalPlayerCharacter()->GetPalPlayerController()->Transmitter->NetworkIndividualComponent->UpdateCharacterNickName_ToServer(Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualHandle->ID, fakename);
+                                                Config.GetPalPlayerCharacter()->GetPalPlayerController()->UpdateCharacterNickName_ToServer(Config.GetPalPlayerCharacter()->CharacterParameterComponent->IndividualHandle->ID, fakename);
                                             }
                                         }
                                     }
