@@ -7081,7 +7081,7 @@ static_assert(sizeof(UPalAICombatModule_BaseCamp) == 0x000028, "Wrong size on UP
 
 // Class Pal.PalDamageExplodeComponent
 // 0x0028 (0x00C8 - 0x00A0)
-class UPalDamageExplodeComponent final : public UActorComponent
+class UPalDamageExplodeComponent : public UActorComponent
 {
 public:
 	uint8                                         Pad_2A2E[0x8];                                     // 0x00A0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -8203,7 +8203,7 @@ static_assert(sizeof(UPalGuildEnterRequestSequence_EnterGuildMainProcess) == 0x0
 
 // Class Pal.PalAmbientSoundLineBase
 // 0x0018 (0x02A8 - 0x0290)
-class APalAmbientSoundLineBase final : public AActor
+class APalAmbientSoundLineBase : public AActor
 {
 public:
 	class UAkComponent*                           AkComponent;                                       // 0x0290(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -11352,7 +11352,7 @@ static_assert(offsetof(UPalBaseCampModuleObjectMaintenance, MaintenanceWayDOs) =
 
 // Class Pal.PalOilrigExplosiveObject
 // 0x0010 (0x02B8 - 0x02A8)
-class APalOilrigExplosiveObject final : public APalLevelObjectActor
+class APalOilrigExplosiveObject : public APalLevelObjectActor
 {
 public:
 	uint8                                         Pad_2B1D[0x8];                                     // 0x02A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -14494,7 +14494,7 @@ static_assert(offsetof(APalBuildObjectGenerateEnergy, MaxEnergyStorage) == 0x000
 
 // Class Pal.PalOilrigTreasureBoxSpawner
 // 0x0058 (0x0300 - 0x02A8)
-class APalOilrigTreasureBoxSpawner final : public APalLevelObjectActor
+class APalOilrigTreasureBoxSpawner : public APalLevelObjectActor
 {
 public:
 	uint8                                         Pad_2BE6[0x8];                                     // 0x02A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -24259,7 +24259,7 @@ static_assert(offsetof(UPalUIBuildingParameter, BuildObjectId) == 0x000038, "Mem
 
 // Class Pal.PalHeatSourceSphereComponent
 // 0x0010 (0x0570 - 0x0560)
-class UPalHeatSourceSphereComponent final : public USphereComponent
+class UPalHeatSourceSphereComponent : public USphereComponent
 {
 public:
 	bool                                          DefaultActive;                                     // 0x0560(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -33647,7 +33647,7 @@ static_assert(offsetof(APalOilrigLevelInstance, OilrigName) == 0x000320, "Member
 
 // Class Pal.PalOilrigLightComponent
 // 0x0008 (0x00A8 - 0x00A0)
-class UPalOilrigLightComponent final : public UActorComponent
+class UPalOilrigLightComponent : public UActorComponent
 {
 public:
 	uint8                                         Pad_2FB9[0x8];                                     // 0x00A0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -33796,7 +33796,7 @@ static_assert(offsetof(UPalOilrigManager, GroupGuid) == 0x000198, "Member 'UPalO
 
 // Class Pal.PalOilrigNPCSpawnerBase
 // 0x0018 (0x02C0 - 0x02A8)
-class APalOilrigNPCSpawnerBase final : public APalLevelObjectActor
+class APalOilrigNPCSpawnerBase : public APalLevelObjectActor
 {
 public:
 	uint8                                         Pad_2FC1[0x8];                                     // 0x02A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])

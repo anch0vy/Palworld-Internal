@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_NPCAIWeaponHandle.BP_NPCAIWeaponHandle_C
 // 0x0000 (0x00E0 - 0x00E0)
-class UBP_NPCAIWeaponHandle_C final : public UPalNPCAIWeaponHandle
+class UBP_NPCAIWeaponHandle_C : public UPalNPCAIWeaponHandle
 {
 public:
 	static class UClass* StaticClass()

@@ -21,7 +21,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_AIAction_NPC_Combat_Gun.BP_AIAction_NPC_Combat_Gun_C
 // 0x0088 (0x0210 - 0x0188)
-class UBP_AIAction_NPC_Combat_Gun_C final : public UBP_AIAction_NPC_CombatBase_C
+class UBP_AIAction_NPC_Combat_Gun_C : public UBP_AIAction_NPC_CombatBase_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_NPC_Combat_Gun_C;       // 0x0188(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

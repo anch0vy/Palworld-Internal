@@ -13,8 +13,6 @@ namespace ABP_Pinkcat_Implementation { struct FAnimBlueprintGeneratedConstantDat
 
 namespace ABP_NPC_Child { struct FAnimBlueprintGeneratedConstantData; }
 
-namespace ABP_IceDeer { struct FAnimBlueprintGeneratedConstantData; }
-
 namespace ABP_ChickenPal { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace ABP_SheepBall_Implementation { struct FAnimBlueprintGeneratedConstantData; }
@@ -22,6 +20,8 @@ namespace ABP_SheepBall_Implementation { struct FAnimBlueprintGeneratedConstantD
 namespace ABP_Player_Hair001_Implementation { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace ABP_F_OldCloth001_Implimentation { struct FAnimBlueprintGeneratedConstantData; }
+
+namespace ABP_Kitsunebi_PartnerSkill { struct FAnimBlueprintGeneratedConstantData; }
 
 namespace ABP_ElecPanda_Implementation { struct FAnimBlueprintGeneratedConstantData; }
 
@@ -42,8 +42,8 @@ namespace ABP_Player
 
 namespace ABP_Player_Hair
 {
-	struct FAnimBlueprintGeneratedMutableData;
 	struct FAnimBlueprintGeneratedConstantData;
+	struct FAnimBlueprintGeneratedMutableData;
 }
 
 namespace ABP_NPC_Base
@@ -56,12 +56,6 @@ namespace ABP_Player_Head
 {
 	struct FAnimBlueprintGeneratedConstantData;
 	struct FAnimBlueprintGeneratedMutableData;
-}
-
-namespace ABP_IceDeer_Implementation
-{
-	struct FAnimBlueprintGeneratedMutableData;
-	struct FAnimBlueprintGeneratedConstantData;
 }
 
 namespace ABP_MonsterBase
