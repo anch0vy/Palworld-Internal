@@ -27,7 +27,7 @@ class UBP_AIAction_AlertByKilledFriend_C final : public UBP_AIAction_CanCombatBa
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_AlertByKilledFriend_C;  // 0x0158(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	EPal_AI_AlertByKilledFriendState              CurrentState;                                      // 0x0160(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4281[0x7];                                     // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_45F8[0x7];                                     // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<EPal_AI_AlertByKilledFriendState, class UClass*> StateMap;                                          // 0x0168(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	class UPalStateMachine*                       StateMacine;                                       // 0x01B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 DeadBody;                                          // 0x01C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -37,8 +37,6 @@ public:
 	double                                        TempDeltaTime;                                     // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionAbort(class APawn* ControlledPawn);
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void AddState(EPal_AI_AlertByKilledFriendState NewParam);
 	void ChangeNextState(EPal_AI_AlertByKilledFriendState Next);
@@ -46,6 +44,8 @@ public:
 	void LineTraceGround(const struct FVector& CenterPos, bool* IsHit, struct FVector* HitPos);
 	void MoveToDeadBody();
 	void StopMovement();
+	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionStart(class APawn* ControlledPawn);
 
 public:

@@ -28,12 +28,12 @@ public:
 public:
 	void BindOnInvaderArrivedDelegate(TDelegate<void()> Event);
 	void ExecuteUbergraph_BP_NPCAIController_Invader(int32 EntryPoint);
-	void ForceBattleStartForOutside(class AActor* StartActor);
 	void OnInvaderArrived();
 	void OnInvaderArrivedDelegate__DelegateSignature();
-	void ReceiveBeginPlay();
 	void ReturnSpawnedPoint(const struct FVector& ReturnPos);
 	void StartMarch(const struct FVector& GoalPos);
+	void ForceBattleStartForOutside(class AActor* StartActor);
+	void ReceiveBeginPlay();
 	void SetAutoDefaultAIAction();
 	void StartDefaultAIAction();
 

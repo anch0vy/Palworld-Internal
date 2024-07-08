@@ -38,10 +38,10 @@ public:
 	void OnArrivedTargetPoint();
 	void OnStuck();
 	void OnWaitFinished();
-	void ReceiveBeginPlay();
 	void StartRaid();
 	void StartReturnToSpawnedPointAction();
 	void StartWaitAction();
+	void ReceiveBeginPlay();
 	void StartDefaultAIAction();
 
 public:

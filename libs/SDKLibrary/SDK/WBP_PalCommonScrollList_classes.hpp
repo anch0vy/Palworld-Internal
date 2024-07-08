@@ -21,7 +21,7 @@ namespace SDK
 
 // WidgetBlueprintGeneratedClass WBP_PalCommonScrollList.WBP_PalCommonScrollList_C
 // 0x0038 (0x0440 - 0x0408)
-class UWBP_PalCommonScrollList_C final : public UPalCommonScrollListBase
+class UWBP_PalCommonScrollList_C : public UPalCommonScrollListBase
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0408(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

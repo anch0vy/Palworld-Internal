@@ -57,26 +57,6 @@ void ABP_NPCAIController_Invader_C::ExecuteUbergraph_BP_NPCAIController_Invader(
 }
 
 
-// Function BP_NPCAIController_Invader.BP_NPCAIController_Invader_C.ForceBattleStartForOutside
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           StartActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_NPCAIController_Invader_C::ForceBattleStartForOutside(class AActor* StartActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_Invader_C", "ForceBattleStartForOutside");
-
-	Params::BP_NPCAIController_Invader_C_ForceBattleStartForOutside Parms{};
-
-	Parms.StartActor = StartActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_NPCAIController_Invader.BP_NPCAIController_Invader_C.OnInvaderArrived
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -100,20 +80,6 @@ void ABP_NPCAIController_Invader_C::OnInvaderArrivedDelegate__DelegateSignature(
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_NPCAIController_Invader_C", "OnInvaderArrivedDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_NPCAIController_Invader.BP_NPCAIController_Invader_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_NPCAIController_Invader_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_Invader_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -156,6 +122,40 @@ void ABP_NPCAIController_Invader_C::StartMarch(const struct FVector& GoalPos)
 	Parms.GoalPos = std::move(GoalPos);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAIController_Invader.BP_NPCAIController_Invader_C.ForceBattleStartForOutside
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           StartActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NPCAIController_Invader_C::ForceBattleStartForOutside(class AActor* StartActor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAIController_Invader_C", "ForceBattleStartForOutside");
+
+	Params::BP_NPCAIController_Invader_C_ForceBattleStartForOutside Parms{};
+
+	Parms.StartActor = StartActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_NPCAIController_Invader.BP_NPCAIController_Invader_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_NPCAIController_Invader_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAIController_Invader_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

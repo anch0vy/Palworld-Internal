@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_NPC_StandardHumanDataSet.BP_NPC_StandardHumanDataSet_C
 // 0x0010 (0x09A0 - 0x0990)
-class ABP_NPC_StandardHumanDataSet_C final : public ABP_NPC_Base_C
+class ABP_NPC_StandardHumanDataSet_C : public ABP_NPC_Base_C
 {
 public:
 	class UBP_HumanCryComponent_C*                BP_HumanCryComponent;                              // 0x0988(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)

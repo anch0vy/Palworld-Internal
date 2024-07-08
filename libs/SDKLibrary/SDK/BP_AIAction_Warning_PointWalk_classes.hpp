@@ -36,13 +36,11 @@ public:
 	struct FVector                                TurnR_Direction;                                   // 0x01B8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                TurnL_Direction;                                   // 0x01D0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EWarningPalAIMoveType                         MoveMode;                                          // 0x01E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4261[0x7];                                     // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_45D8[0x7];                                     // 0x01E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        TimeOutTime;                                       // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPalActionBase*                         TurnAction;                                        // 0x01F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionAbort(class APawn* ControlledPawn);
-	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void CancelTurnAction();
 	void ExecuteUbergraph_BP_AIAction_Warning_PointWalk(int32 EntryPoint);
@@ -53,6 +51,8 @@ public:
 	void TurnMode();
 	void TurnR45();
 	void UpdateMoveGoal();
+	void ActionAbort(class APawn* ControlledPawn);
+	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionPause(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
 	void ActionStart(class APawn* ControlledPawn);

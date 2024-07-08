@@ -17,6 +17,40 @@
 namespace SDK
 {
 
+// Function WBP_OptionSettings_ListContentSwitch.WBP_OptionSettings_ListContentSwitch_C.SWITCH
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_OptionSettings_ListContentSwitch_C::SWITCH()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentSwitch_C", "SWITCH");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_OptionSettings_ListContentSwitch.WBP_OptionSettings_ListContentSwitch_C.Setup
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Param_IsOn                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_OptionSettings_ListContentSwitch_C::Setup(bool Param_IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_OptionSettings_ListContentSwitch_C", "Setup");
+
+	Params::WBP_OptionSettings_ListContentSwitch_C_Setup Parms{};
+
+	Parms.Param_IsOn = Param_IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_OptionSettings_ListContentSwitch.WBP_OptionSettings_ListContentSwitch_C.OnSwitcherChanged__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -193,40 +227,6 @@ void UWBP_OptionSettings_ListContentSwitch_C::BndEvt__WBP_OptionSettings_ListCon
 	Params::WBP_OptionSettings_ListContentSwitch_C_BndEvt__WBP_OptionSettings_ListContentSwitch_WBP_PalCommonButton_OFF_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_OptionSettings_ListContentSwitch.WBP_OptionSettings_ListContentSwitch_C.SWITCH
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_OptionSettings_ListContentSwitch_C::SWITCH()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentSwitch_C", "SWITCH");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_OptionSettings_ListContentSwitch.WBP_OptionSettings_ListContentSwitch_C.Setup
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Param_IsOn                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_OptionSettings_ListContentSwitch_C::Setup(bool Param_IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_OptionSettings_ListContentSwitch_C", "Setup");
-
-	Params::WBP_OptionSettings_ListContentSwitch_C_Setup Parms{};
-
-	Parms.Param_IsOn = Param_IsOn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

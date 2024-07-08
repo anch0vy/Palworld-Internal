@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "F_NPC_PathWalkArray_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Pal_structs.hpp"
 #include "Pal_classes.hpp"
-#include "F_NPC_PathWalkArray_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
 

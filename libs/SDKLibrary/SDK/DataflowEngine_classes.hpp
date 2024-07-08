@@ -21,7 +21,7 @@ namespace SDK
 class UDataflowEdNode final : public UEdGraphNode
 {
 public:
-	uint8                                         Pad_344A[0x20];                                    // 0x0098(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35CD[0x20];                                    // 0x0098(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -41,9 +41,9 @@ static_assert(sizeof(UDataflowEdNode) == 0x0000B8, "Wrong size on UDataflowEdNod
 class UDataflow final : public UEdGraph
 {
 public:
-	uint8                                         Pad_344B[0x10];                                    // 0x0060(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35CE[0x10];                                    // 0x0060(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bActive;                                           // 0x0070(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_344C[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_35CF[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UObject*>                        Targets;                                           // 0x0078(0x0010)(Edit, ZeroConstructor, AdvancedDisplay, UObjectWrapper, NativeAccessSpecifierPublic)
 
 public:

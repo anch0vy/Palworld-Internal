@@ -21,7 +21,7 @@ namespace SDK
 class UMeshDescriptionBase : public UObject
 {
 public:
-	uint8                                         Pad_33C3[0x2C8];                                   // 0x0028(0x02C8)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_353E[0x2C8];                                   // 0x0028(0x02C8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ComputePolygonTriangulation(const struct FPolygonID& PolygonID);

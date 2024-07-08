@@ -28,7 +28,7 @@ public:
 	TMap<EPal_NPC_CombatGunState, class UClass*>  StateMap;                                          // 0x0190(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	EPal_NPC_CombatGunState                       CurrentState;                                      // 0x01E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsStopTick;                                        // 0x01E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_448D[0x6];                                     // 0x01E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_460B[0x6];                                     // 0x01E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Timer;                                             // 0x01E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        RandomMoveTime;                                    // 0x01F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        SideMoveTime;                                      // 0x01F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -39,6 +39,8 @@ public:
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionPause(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
+	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void Add_Gun_Combat_State(EPal_NPC_CombatGunState GunState);
 	void AddAllState();
 	void AddTimer(double* CurrentTime);
@@ -48,8 +50,6 @@ public:
 	void IsNear_FarRange(double Offset, bool* Near);
 	void IsNear_NearRange(double Offset, bool* Near);
 	void SwitchTickState();
-	void ActionStart(class APawn* ControlledPawn);
-	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()

@@ -18,30 +18,6 @@
 namespace SDK::Params
 {
 
-// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ActionAbort
-// 0x0008 (0x0008 - 0x0000)
-struct BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort) == 0x000008, "Wrong alignment on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort");
-static_assert(sizeof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort) == 0x000008, "Wrong size on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort::ControlledPawn' has a wrong offset!");
-
-// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ActionFinished
-// 0x0010 (0x0010 - 0x0000)
-struct BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished final
-{
-public:
-	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished");
-static_assert(sizeof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished) == 0x000010, "Wrong size on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished::ControlledPawn' has a wrong offset!");
-static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished::WithResult' has a wrong offset!");
-
 // Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ActionTick
 // 0x0010 (0x0010 - 0x0000)
 struct BP_AIAction_Visitor_TravelToBaseCamp_C_ActionTick final
@@ -61,15 +37,15 @@ struct BP_AIAction_Visitor_TravelToBaseCamp_C_ExecuteUbergraph_BP_AIAction_Visit
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4240[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_455E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  K2Node_Event_ControlledPawn_4;                     // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4241[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_455F[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  K2Node_Event_ControlledPawn_3;                     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  K2Node_Event_ControlledPawn_2;                     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  K2Node_Event_ControlledPawn_1;                     // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EPawnActionResult                             K2Node_Event_WithResult;                           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4242[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4560[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  K2Node_Event_ControlledPawn;                       // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -102,27 +78,27 @@ struct BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp final
 public:
 	class AActor*                                 ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         DeltaTime;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4243[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4561[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                TempCampToSelf;                                    // 0x0010(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4244[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4562[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsNearTwoPoint_ReturnValue;               // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4245[0x6];                                     // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4563[0x6];                                     // 0x0052(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_InFanShap_TargetLocation_ReturnValue;     // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4246[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4564[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_2;        // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x00A8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4247[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4565[0x7];                                     // 0x00C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AController*                            CallFunc_GetController_ReturnValue;                // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsNearTwoPoint_ReturnValue_1;             // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4248[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4566[0x7];                                     // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AController*                            CallFunc_GetController_ReturnValue_1;              // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Add_DoubleDouble_B_ImplicitCast;          // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -147,6 +123,30 @@ static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_
 static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_IsNearTwoPoint_ReturnValue_1) == 0x0000E8, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_IsNearTwoPoint_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_GetController_ReturnValue_1) == 0x0000F0, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_GetController_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp, CallFunc_Add_DoubleDouble_B_ImplicitCast) == 0x0000F8, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_Tick_Move_to_Base_Camp::CallFunc_Add_DoubleDouble_B_ImplicitCast' has a wrong offset!");
+
+// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ActionAbort
+// 0x0008 (0x0008 - 0x0000)
+struct BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort) == 0x000008, "Wrong alignment on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort");
+static_assert(sizeof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort) == 0x000008, "Wrong size on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ActionAbort::ControlledPawn' has a wrong offset!");
+
+// Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ActionFinished
+// 0x0010 (0x0010 - 0x0000)
+struct BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished final
+{
+public:
+	class APawn*                                  ControlledPawn;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPawnActionResult                             WithResult;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished) == 0x000008, "Wrong alignment on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished");
+static_assert(sizeof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished) == 0x000010, "Wrong size on BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished, ControlledPawn) == 0x000000, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished::ControlledPawn' has a wrong offset!");
+static_assert(offsetof(BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished, WithResult) == 0x000008, "Member 'BP_AIAction_Visitor_TravelToBaseCamp_C_ActionFinished::WithResult' has a wrong offset!");
 
 // Function BP_AIAction_Visitor_TravelToBaseCamp.BP_AIAction_Visitor_TravelToBaseCamp_C.ActionPause
 // 0x0008 (0x0008 - 0x0000)

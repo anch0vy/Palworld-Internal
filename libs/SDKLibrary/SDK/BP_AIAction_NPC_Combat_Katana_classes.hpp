@@ -26,10 +26,10 @@ class UBP_AIAction_NPC_Combat_Katana_C final : public UBP_AIAction_NPC_CombatBas
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AIAction_NPC_Combat_Katana_C;    // 0x0188(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	EPal_NPC_CombatMeleeState                     CurrentState;                                      // 0x0190(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                         Pad_447F[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F18[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        ConstAttackStartRange;                             // 0x0198(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsStopTick;                                        // 0x01A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                         Pad_4480[0x7];                                     // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3F19[0x7];                                     // 0x01A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        ConstNearAttackRange;                              // 0x01A8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Timer;                                             // 0x01B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	TMap<EPal_NPC_CombatMeleeState, class UClass*> StateMap;                                          // 0x01B8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -39,12 +39,12 @@ public:
 	void ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult);
 	void ActionPause(class APawn* ControlledPawn);
 	void ActionResume(class APawn* ControlledPawn);
+	void ActionStart(class APawn* ControlledPawn);
+	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 	void AddMeleeCombatState(EPal_NPC_CombatMeleeState MeleeState);
 	void AddTimer(double* CurrentTime);
 	void Change_NextState(EPal_NPC_CombatMeleeState Next);
 	void ExecuteUbergraph_BP_AIAction_NPC_Combat_Katana(int32 EntryPoint);
-	void ActionStart(class APawn* ControlledPawn);
-	void ActionTick(class APawn* ControlledPawn, float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()

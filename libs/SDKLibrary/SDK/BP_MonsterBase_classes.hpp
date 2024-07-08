@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_MonsterBase.BP_MonsterBase_C
 // 0x0070 (0x0A50 - 0x09E0)
-class ABP_MonsterBase_C final : public APalMonsterCharacter
+class ABP_MonsterBase_C : public APalMonsterCharacter
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x09E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -32,9 +32,9 @@ public:
 	class UPalInteractableSphereComponentNative*  BP_InteractableSphere;                             // 0x0A10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UPalFacialComponent*                    PalFacial;                                         // 0x0A18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	ECollisionChannel                             CapsuleCollisionChannel;                           // 0x0A20(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4407[0x3];                                     // 0x0A21(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B75[0x3];                                     // 0x0A21(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   CollisionProfileNameCache;                         // 0x0A24(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4408[0x4];                                     // 0x0A2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B76[0x4];                                     // 0x0A2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      FlyEffect;                                         // 0x0A30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                        EffectiveAttackLogTimer;                           // 0x0A38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnInflictDamageEvent;                              // 0x0A40(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)

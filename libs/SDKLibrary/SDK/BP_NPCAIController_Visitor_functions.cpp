@@ -140,20 +140,6 @@ void ABP_NPCAIController_Visitor_C::OnWaitFinished()
 }
 
 
-// Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_NPCAIController_Visitor_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NPCAIController_Visitor_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.StartRaid
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -191,6 +177,20 @@ void ABP_NPCAIController_Visitor_C::StartWaitAction()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("BP_NPCAIController_Visitor_C", "StartWaitAction");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_NPCAIController_Visitor.BP_NPCAIController_Visitor_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_NPCAIController_Visitor_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_NPCAIController_Visitor_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

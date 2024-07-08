@@ -79,6 +79,48 @@ void UBP_AIAction_NPC_Combat_Katana_C::ActionResume(class APawn* ControlledPawn)
 }
 
 
+// Function BP_AIAction_NPC_Combat_Katana.BP_AIAction_NPC_Combat_Katana_C.ActionStart
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_NPC_Combat_Katana_C::ActionStart(class APawn* ControlledPawn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_NPC_Combat_Katana_C", "ActionStart");
+
+	Params::BP_AIAction_NPC_Combat_Katana_C_ActionStart Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_NPC_Combat_Katana.BP_AIAction_NPC_Combat_Katana_C.ActionTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_NPC_Combat_Katana_C::ActionTick(class APawn* ControlledPawn, float DeltaSeconds)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_NPC_Combat_Katana_C", "ActionTick");
+
+	Params::BP_AIAction_NPC_Combat_Katana_C_ActionTick Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_AIAction_NPC_Combat_Katana.BP_AIAction_NPC_Combat_Katana_C.AddMeleeCombatState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -155,48 +197,6 @@ void UBP_AIAction_NPC_Combat_Katana_C::ExecuteUbergraph_BP_AIAction_NPC_Combat_K
 	Params::BP_AIAction_NPC_Combat_Katana_C_ExecuteUbergraph_BP_AIAction_NPC_Combat_Katana Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_NPC_Combat_Katana.BP_AIAction_NPC_Combat_Katana_C.ActionStart
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_NPC_Combat_Katana_C::ActionStart(class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_NPC_Combat_Katana_C", "ActionStart");
-
-	Params::BP_AIAction_NPC_Combat_Katana_C_ActionStart Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AIAction_NPC_Combat_Katana.BP_AIAction_NPC_Combat_Katana_C.ActionTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_NPC_Combat_Katana_C::ActionTick(class APawn* ControlledPawn, float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_NPC_Combat_Katana_C", "ActionTick");
-
-	Params::BP_AIAction_NPC_Combat_Katana_C_ActionTick Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

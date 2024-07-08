@@ -20,32 +20,33 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_ActionGeneralAttackFarBase.BP_ActionGeneralAttackFarBase_C
 // 0x0070 (0x02C0 - 0x0250)
-class UBP_ActionGeneralAttackFarBase_C : public UBP_ActionGeneralAttackBase_C
+#pragma pack(push, 0x1)
+class alignas(0x10) UBP_ActionGeneralAttackFarBase_C : public UBP_ActionGeneralAttackBase_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_ActionGeneralAttackFarBase_C;    // 0x0250(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                          IsBullet;                                          // 0x0258(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsHoming;                                          // 0x0259(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EC4[0x6];                                     // 0x025A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B26[0x6];                                     // 0x025A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        BulletSpeed;                                       // 0x0260(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasStartedAction;                                  // 0x0268(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                          RotPitchTowardTarget;                              // 0x0269(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RotPitchTowardReticle;                             // 0x026A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EC5[0x1];                                     // 0x026B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B27[0x1];                                     // 0x026B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ReadyTargetingSpeed;                               // 0x026C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         ProcessTargetingSpeed;                             // 0x0270(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasSpawnedEffect;                                  // 0x0274(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
-	uint8                                         Pad_3EC6[0x3];                                     // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B28[0x3];                                     // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class APalSkillEffectBase*                    Effect;                                            // 0x0278(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, AdvancedDisplay, HasGetValueTypeHash)
 	bool                                          DoPredict_;                                        // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EC7[0x7];                                     // 0x0281(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B29[0x7];                                     // 0x0281(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 PredictedTargetClass;                              // 0x0288(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 PredictedTarget;                                   // 0x0290(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                         PredictPowerRate;                                  // 0x0298(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EC8[0x4];                                     // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B2A[0x4];                                     // 0x029C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        PredictWeekDistance;                               // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          EnableDestroyEffectOnBreakAction;                  // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EC9[0x3];                                     // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_4B2B[0x3];                                     // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CurrentMeshPitch;                                  // 0x02AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsInitialUpdateMeshPitch;                          // 0x02B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          OnAfterAnimation;                                  // 0x02B1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -89,6 +90,7 @@ public:
 		return GetDefaultObjImpl<UBP_ActionGeneralAttackFarBase_C>();
 	}
 };
+#pragma pack(pop)
 static_assert(alignof(UBP_ActionGeneralAttackFarBase_C) == 0x000010, "Wrong alignment on UBP_ActionGeneralAttackFarBase_C");
 static_assert(sizeof(UBP_ActionGeneralAttackFarBase_C) == 0x0002C0, "Wrong size on UBP_ActionGeneralAttackFarBase_C");
 static_assert(offsetof(UBP_ActionGeneralAttackFarBase_C, UberGraphFrame_BP_ActionGeneralAttackFarBase_C) == 0x000250, "Member 'UBP_ActionGeneralAttackFarBase_C::UberGraphFrame_BP_ActionGeneralAttackFarBase_C' has a wrong offset!");

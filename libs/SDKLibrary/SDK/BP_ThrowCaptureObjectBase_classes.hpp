@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_ThrowCaptureObjectBase.BP_ThrowCaptureObjectBase_C
 // 0x0018 (0x03B0 - 0x0398)
-class ABP_ThrowCaptureObjectBase_C final : public ABP_ThrowObjectBase_C
+class ABP_ThrowCaptureObjectBase_C : public ABP_ThrowObjectBase_C
 {
 public:
 	FMulticastInlineDelegateProperty_             OnCaptureStarted;                                  // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)

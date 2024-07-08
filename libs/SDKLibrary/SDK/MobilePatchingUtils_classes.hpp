@@ -22,7 +22,7 @@ namespace SDK
 class UMobileInstalledContent : public UObject
 {
 public:
-	uint8                                         Pad_2485[0x20];                                    // 0x0028(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25F7[0x20];                                    // 0x0028(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	float GetDiskFreeSpace();
@@ -47,7 +47,7 @@ static_assert(sizeof(UMobileInstalledContent) == 0x000048, "Wrong size on UMobil
 class UMobilePendingContent final : public UMobileInstalledContent
 {
 public:
-	uint8                                         Pad_2488[0x40];                                    // 0x0048(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_25FA[0x40];                                    // 0x0048(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	float GetDownloadSize();

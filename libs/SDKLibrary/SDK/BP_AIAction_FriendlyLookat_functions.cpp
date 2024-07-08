@@ -17,28 +17,6 @@
 namespace SDK
 {
 
-// Function BP_AIAction_FriendlyLookat.BP_AIAction_FriendlyLookat_C.ActionFinished
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EPawnActionResult                       WithResult                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_AIAction_FriendlyLookat_C::ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AIAction_FriendlyLookat_C", "ActionFinished");
-
-	Params::BP_AIAction_FriendlyLookat_C_ActionFinished Parms{};
-
-	Parms.ControlledPawn = ControlledPawn;
-	Parms.WithResult = WithResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_AIAction_FriendlyLookat.BP_AIAction_FriendlyLookat_C.ActionTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -76,6 +54,28 @@ void UBP_AIAction_FriendlyLookat_C::ExecuteUbergraph_BP_AIAction_FriendlyLookat(
 	Params::BP_AIAction_FriendlyLookat_C_ExecuteUbergraph_BP_AIAction_FriendlyLookat Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AIAction_FriendlyLookat.BP_AIAction_FriendlyLookat_C.ActionFinished
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPawnActionResult                       WithResult                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UBP_AIAction_FriendlyLookat_C::ActionFinished(class APawn* ControlledPawn, EPawnActionResult WithResult)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("BP_AIAction_FriendlyLookat_C", "ActionFinished");
+
+	Params::BP_AIAction_FriendlyLookat_C_ActionFinished Parms{};
+
+	Parms.ControlledPawn = ControlledPawn;
+	Parms.WithResult = WithResult;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

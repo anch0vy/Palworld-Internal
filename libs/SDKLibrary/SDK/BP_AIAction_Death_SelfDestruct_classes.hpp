@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_AIAction_Death_classes.hpp"
 #include "Pal_structs.hpp"
+#include "BP_AIAction_Death_classes.hpp"
 
 
 namespace SDK
